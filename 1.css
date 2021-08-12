@@ -1,0 +1,219 @@
+div {
+	
+	width: 12%;
+	height: 16%;
+
+}
+
+img {
+	width:130px;
+	height: 100px;
+	cursor: pointer;
+}
+
+
+.c {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+}
+
+.b {
+	position: absolute;
+	top: 0px;
+	left: 24%;
+	
+}
+
+
+.d {
+	
+	position: absolute;
+	top: 16%;
+	left: 24%;
+	
+	
+}
+
+
+
+.a {
+	position: absolute;
+	left: 0px;
+	top: 16%;
+	
+}
+
+.e {
+	position: absolute;
+	left: 12%;
+	top: 8%;
+	
+}
+
+
+.f {
+	
+	position: absolute;
+	left: 12%;
+	top: 32%;
+	
+	
+	
+}
+
+
+
+.n {
+	position: absolute;
+	left: 62%;
+	top: 0px;
+	
+	
+}
+
+
+
+.r   {
+	
+position: absolute;
+	left: 0px;
+	top: 52%;
+	
+	
+}
+
+.t   {
+	
+position: absolute;
+	left: 0px;
+	top: 72%;
+	width: 45%;
+	
+	
+}
+
+
+.s {
+	
+	position: absolute;
+	left: 15%;
+	top: 52%;
+	
+	
+}
+
+
+
+
+
+.k {
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	
+}
+
+.j {
+	position: absolute;
+	top: 0px;
+	left: 74%;
+	
+}
+
+
+.l {
+	
+	position: absolute;
+	top: 16%;
+	left: 74%;
+	
+	
+}
+
+
+
+.h {
+	position: absolute;
+	left: 50%;
+	top: 16%;
+	
+}
+
+.m {
+	position: absolute;
+	left: 62%;
+	top: 8%;
+	
+}
+
+
+.p {
+	
+	position: absolute;
+	left: 65%;
+	top: 32%;
+	
+	
+	
+}
+
+
+
+.o {
+	position: absolute;
+	left: 12%;
+	top: 0px;
+	
+	
+}
+
+
+
+         
+           .left { position: absolute; width: 50%; }
+           .right { position: absolute; width: 50%; } 
+		   
+		   
+		   
+		   
+		   
+		   .u   {
+	
+position: absolute;
+	left: 50%;
+	top: 52%;
+	
+	
+}
+
+.x   {
+	
+position: absolute;
+	left: 50%;
+	top: 72%;
+	width: 50%;
+	
+}
+
+
+.w {
+	
+	position: absolute;
+	left: 80%;
+	top: 52%;
+	
+	
+}
+
+
+
+.v {
+	
+	position: absolute;
+	left: 65%;
+	top: 52%;
+	
+	
+}
