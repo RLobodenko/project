@@ -3,40 +3,1804 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Калькулятор</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/cerulean/bootstrap.min.css">
-		<link href="1.css" type="text/css" rel="stylesheet"/>
 
-		<script src="1.js" defer>
-				</script>
+	
+
+	
+			<script>
+			    
+			    
+var but = document.getElementById('but');
+var radio1 = document.getElementsByName('in1');
+var radio2 = document.getElementsByName('in3');
+var radio3 = document.getElementsByName('in5');
+var radio4 = document.getElementsByName('in2');
+var radio5 = document.getElementsByName('in4');
+var radio6 = document.getElementsByName('in6');
+var radio7 = document.getElementsByName('in7');
+var radio8 = document.getElementsByName('in8');
+var radio9 = document.getElementsByName('in9');
+var radio10 = document.getElementsByName('in10');
+var radio11 = document.getElementsByName('in11');
+var but1 = document.getElementById('but1');
+var radio12 = document.getElementsByName('in12');
+var radio13 = document.getElementsByName('in13');
+var radio14 = document.getElementsByName('in14');
+var radio15 = document.getElementsByName('in15');
+var radio16 = document.getElementsByName('in16');
+var radio17 = document.getElementsByName('in17');
+var radio18 = document.getElementsByName('in18');
+var radio19 = document.getElementsByName('in19');
+var radio20 = document.getElementsByName('in20');
+var radio21 = document.getElementsByName('in21');
+var radio22 = document.getElementsByName('in22');
+var radio23 = document.getElementsByName('in23');
+var radio24 = document.getElementsByName('in24');
+var radio25 = document.getElementsByName('in25');
+
+var ks1=[140, 200, 300];
+var pp1=[60, 115, 190];
+var pn1=[60, 115, 200];
+
+var ks2=[210, 300, 450];
+var pp2=[60, 115, 190];
+var pn2=[60, 115, 200];
+
+
+
+
+function f2() {
+   
+    for (i=0;i<radio11.length;i++){
+        if(radio2[i].selected && radio6[i].selected) {
+           document.getElementById('test').innerHTML="10-9, " + ks2[0] + "р";
+            document.getElementById('test1').innerHTML="10-1, " + pp2[0] + "р";
+            document.getElementById('test2').innerHTML="10-1, " + pn2[0] + "р";
+            document.getElementById('out').innerHTML = ks2[0] + pp2[0] + pn2[0] + "р";
+            return;
+    
+}
+        else if(radio2[i].selected && radio7[i].selected) {
+
+          document.getElementById('test').innerHTML="15-9, " + ks2[1]  + "р";
+            document.getElementById('test1').innerHTML="15-1, " + pp2[1] + "р";
+            document.getElementById('test2').innerHTML="15-1, " + pn2[1] + "р";
+            document.getElementById('out').innerHTML = ks2[1] + pp2[1] + pn2[1] + "р";
+         
+            return;
+
+        }
+
+
+            else if(radio2[i].selected && radio8[i].selected) {
+
+          document.getElementById('test').innerHTML="20-9, " + ks2[2]  + "р";
+                document.getElementById('test1').innerHTML="20-1, "+ pp2[2] + "р";
+                document.getElementById('test2').innerHTML="20-1, " + pn2[2] + "р";
+                document.getElementById('out').innerHTML = ks2[2] + pp2[2] + pn2[2] + "р";
+           
+                return;
+
+        }
+            
+
+
+
+
+            else if(radio4[i].selected && radio6[i].selected && radio9[i].selected) {
+
+            document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+                document.getElementById('out').innerHTML = ks1[0] + ks1[0] + pp1[0] + pp1[0] + pn1[0] + pn1[0] + "р";
+         
+                return;
+            }
+
+
+            else if(radio4[i].selected && radio6[i].selected  && radio10[i].selected) {
+
+              document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+                
+                document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+                
+                document.getElementById('out').innerHTML = ks1[0] + ks1[1] + pp1[0] + pp1[1] + pn1[0] + pn1[1] + "р";
+                return;
+
+
+
+            }
+
+
+
+            else if(radio4[i].selected && radio6[i].selected && radio11[i].selected) {
+
+            document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+                
+                document.getElementById('out').innerHTML = ks1[0] + ks1[2] + pp1[0] + pp1[2] + pn1[0] + pn1[2] + "р";
+                return;
+
+            }
+
+
+
+
+            else if(radio4[i].selected && radio7[i].selected  && radio9[i].selected) {
+
+              document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+                document.getElementById('out').innerHTML = ks1[1] + ks1[0] + pp1[1] + pp1[0] + pn1[1] + pn1[0] + "р";
+                return;
+
+
+            }
+
+            else if(radio4[i].selected && radio7[i].selected && radio10[i].selected) {
+
+            document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+                document.getElementById('out').innerHTML = ks1[1] + ks1[1] + pp1[1] + pp1[1] + pn1[1] + pn1[1] + "р";
+                return;
+            }
+
+
+
+
+            else if(radio4[i].selected && radio7[i].selected  && radio11[i].selected) {
+
+                document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+                document.getElementById('out').innerHTML = ks1[1] + ks1[2] + pp1[1] + pp1[2] + pn1[1] + pn1[2] + "р";
+                
+
+                return;
+
+            }
+            else if(radio4[i].selected && radio8[i].selected  && radio9[i].selected) {
+
+              document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp1[2] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+                document.getElementById('out').innerHTML = ks1[2] + ks1[0] + pp1[2] + pp1[0] + pn1[2] + pn1[0] + "р";
+                return;
+
+
+            }
+
+            else if(radio4[i].selected && radio8[i].selected && radio10[i].selected) {
+
+            document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp1[2] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+                
+                document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+                document.getElementById('out').innerHTML = ks1[2] + ks1[1] + pp1[2] + pp1[1] + pn1[2] + pn1[1] + "р";
+                return;
+            }
+
+
+
+
+            else if(radio4[i].selected && radio8[i].selected  && radio11[i].selected) {
+
+              document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+                document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp1[2] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+                document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+                document.getElementById('out').innerHTML = ks1[2] + ks1[2] + pp1[2] + pp1[2] + pn1[2] + pn1[2] + "р";
+                return;
+
+            }
+        
+        
+
+
+
+        else if(radio1[i].selected && radio6[i].selected) {
+
+            document.getElementById('test').innerHTML="10-9, " + ks1[0] + "р";
+            document.getElementById('test1').innerHTML="10-1, " + pp1[0] + "р";
+            document.getElementById('test2').innerHTML="10-1, " + pn1[0] + "р";
+            document.getElementById('out').innerHTML = ks1[0] + pp1[0] + pn1[0] + "р";
+            return;
+        }
+
+
+
+
+        else if(radio1[i].selected && radio7[i].selected) {
+
+            document.getElementById('test').innerHTML="15-9, " + ks1[1] + "р";
+            document.getElementById('test1').innerHTML="15-1, " + pp1[1] + "р";
+            document.getElementById('test2').innerHTML="15-1, " + pn1[1] + "р";
+            document.getElementById('out').innerHTML = ks1[1] + pp1[1] + pn1[1] + "р";
+
+            return;
+
+
+        }
+
+
+        else if(radio1[i].selected && radio8[i].selected) {
+
+            document.getElementById('test').innerHTML="20-9, " + ks1[2] + "р";
+            document.getElementById('test1').innerHTML="20-1, " + pp1[2] + "р";
+            document.getElementById('test2').innerHTML="20-1, " + pn1[2] + "р";
+            document.getElementById('out').innerHTML = ks1[2] + pp1[2] + pn1[2] + "р";
+            return;
+
+        }
+
+
+        else if(radio5[i].selected && radio6[i].selected && radio9[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[0] + ks2[0] + pp2[0] + pp2[0] + pn2[0] + pn2[0] + "р";
+            return;
+        }
+
+
+
+
+        else if(radio5[i].selected && radio6[i].selected  && radio10[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn2[1] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[0] + ks2[1] + pp2[0] + pp2[1] + pn2[0] + pn2[1] + "р";
+            return;
+
+        }
+
+
+
+        else if(radio5[i].selected && radio6[i].selected && radio11[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] + "р";
+            document.getElementById('out').innerHTML = ks2[0] + ks2[2] + pp2[0] + pp2[2] + pn2[0] + pn2[2] + "р";
+            return;
+        }
+
+
+        
+        
+
+
+        else if(radio5[i].selected && radio7[i].selected  && radio9[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out').innerHTML = ks2[1] + ks2[0] + pp2[1] + pp2[0] + pn2[1] + pn2[0] + "р";
+
+            return;
+
+        }
+
+        else if(radio5[i].selected && radio7[i].selected && radio10[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] + "р";
+            
+            document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] + "р";
+            document.getElementById('out').innerHTML = ks2[1] + ks2[1] + pp2[1] + pp2[1] + pn2[1] + pn2[1] + "р";
+            return;
+        }
+
+
+
+
+        else if(radio5[i].selected && radio7[i].selected  && radio11[i].selected) {
+
+            document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] + "р";
+            
+            document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] + "р";
+            document.getElementById('out').innerHTML = ks2[1] + ks2[2] + pp2[1] + pp2[2] + pn2[1] + pn2[2] + "р";
+            return;
+
+
+        }
+        else if(radio5[i].selected && radio8[i].selected  && radio9[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out').innerHTML = ks2[2] + ks2[0] + pp2[2] + pp2[0] + pn2[2] + pn2[0] + "р";
+            return;
+
+
+        }
+
+        else if(radio5[i].selected && radio8[i].selected && radio10[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[2] + ks2[1] + pp2[2] + pp2[1] + pn2[2] + pn2[1] + "р";
+            return;
+        }
+
+
+
+
+        else if(radio5[i].selected && radio8[i].selected  && radio11[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[2] + ks2[2] + pp2[2] + pp2[2] + pn2[2] + pn2[2] + "р";
+            return;
+
+
+        }
+
+
+
+
+        
+        
+        
+        else if(radio3[i].selected && radio6[i].selected && radio9[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[0] + ks1[0] + pp2[0] + pp1[0] + pn2[0] + pn1[0] + "р";
+            return;
+        }
+
+
+        else if(radio3[i].selected && radio7[i].selected  && radio9[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+            
+            document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[1] + ks1[0] + pp2[1] + pp1[0] + pn2[1] + pn1[0] + "р";
+            return;
+
+
+        }
+        
+        
+      
+        
+        else if(radio3[i].selected && radio8[i].selected  && radio9[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+            
+            document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+            
+            document.getElementById('out').innerHTML = ks1[0] + ks2[2] + pp1[0] + pp2[2] + pn1[0] + pn2[2] + "р";
+            return;
+
+
+        }
+
+        
+        else if(radio3[i].selected && radio6[i].selected  && radio10[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[0] + ks1[1] + pp2[0] + pp1[1] + pn2[0] + pn1[1] + "р";
+            return;
+
+
+        }
+
+        
+
+
+        else if(radio3[i].selected && radio6[i].selected && radio11[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+            
+            document.getElementById('out').innerHTML = ks2[0] + ks1[2] + pp2[0] + pp1[2] + pn2[0] + pn1[2] + "р";
+            return;
+        }
+
+
+       
+
+        else if(radio3[i].selected && radio7[i].selected && radio10[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+            
+            document.getElementById('out').innerHTML = ks1[1] + ks2[1] + pp1[1] + pp2[1] + pn1[1] + pn2[1] + "р";
+            return;
+        }
+
+
+
+
+        else if(radio3[i].selected && radio7[i].selected  && radio11[i].selected) {
+
+            document.getElementById('test').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+            
+            document.getElementById('out').innerHTML = ks1[2] + ks2[1] + pp1[2] + pp2[1] + pn1[2] + pn2[1] + "р";
+            return;
+
+
+        }
+        
+
+        else if(radio3[i].selected && radio8[i].selected && radio10[i].selected) {
+
+        document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+            
+            document.getElementById('out').innerHTML = ks1[1] + ks2[2] + pp1[1] + pp2[2] + pn1[1] + pn2[2] + "р";
+            return;
+        }
+
+
+
+
+        else if(radio3[i].selected && radio8[i].selected  && radio11[i].selected) {
+
+          document.getElementById('test').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test1').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test2').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+            
+            document.getElementById('out').innerHTML = ks1[2] + ks2[2] + pp1[2] + pp2[2] + pn1[2] + pn2[2] + "р";
+
+            return;
+
+        }
+        
+    }
+        
+       
+    
+    
+
+   
+}
+
+
+
+
+
+
+
+function f1() {
+    
+    
+
+    
+    
+   
+    for (i=0;i<radio25.length;i++){
+        if(radio12[i].selected && radio17[i].selected && radio20[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+            document.getElementById('out1').innerHTML = ks1[0] + ks1[0] + pp1[0] + pp1[0] + pn1[0] + pn1[0] + "р";
+            return;
+    
+}
+        else if(radio12[i].selected && radio17[i].selected && radio21[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+            document.getElementById('out1').innerHTML = ks1[0] + ks1[1] + pp1[0] + pp1[1] + pn1[0] + pn1[1] + "р";
+            return;
+
+        }
+
+
+            else if(radio12[i].selected && radio17[i].selected && radio22[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+                document.getElementById('out1').innerHTML = ks1[0] + ks1[2] + pp1[0] + pp1[2] + pn1[0] + pn1[2] + "р";
+                return;
+
+        }
+            
+
+
+
+
+		else if(radio12[i].selected && radio18[i].selected && radio20[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+            document.getElementById('out1').innerHTML = ks1[1] + ks1[0] + pp1[1] + pp1[0] + pn1[1] + pn1[0] + "р";
+            return;
+    
+}
+        else if(radio12[i].selected && radio18[i].selected && radio21[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+            document.getElementById('out1').innerHTML = ks1[1] + ks2[1] + pp1[1] + pp1[1] + pn1[1] + pn1[1] + "р";
+            return;
+
+        }
+
+
+            else if(radio12[i].selected && radio18[i].selected && radio22[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+                document.getElementById('out1').innerHTML = ks1[1] + ks1[2] + pp1[1] + pp1[2] + pn1[1] + pn1[2] + "р";
+                return;
+
+        }
+            
+   else if(radio12[i].selected && radio19[i].selected && radio20[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp1[2] +"р; второй колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 10-1, " + pn1[0] + "р";
+       document.getElementById('out1').innerHTML = ks1[2] + ks1[0] + pp1[2] + pp1[0] + pn1[2] + pn1[0] + "р";
+            return;
+    
+}
+        else if(radio12[i].selected && radio19[i].selected && radio21[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp1[2] +"р; второй колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 15-1, " + pn1[1] + "р";
+            document.getElementById('out1').innerHTML = ks1[2] + ks1[1] + pp1[2] + pp1[1] + pn1[2] + pn1[1] + "р";
+            return;
+
+        }
+
+
+            else if(radio12[i].selected && radio19[i].selected && radio22[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 20-9, " + ks1[2] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp1[2] +"р; второй колодец: 20-1, " + pp1[2] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 20-1, " + pn1[2] + "р";
+                document.getElementById('out1').innerHTML = ks1[2] + ks1[2] + pp1[2] + pp1[2] + pn1[2] + pn1[2] + "р";
+                return;
+
+        }
+            
+
+
+
+
+
+
+    else if(radio13[i].selected && radio17[i].selected && radio20[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] + "р";
+               document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + pp2[0] + pp2[0] + pn2[0] + pn2[0] + "р";
+            return;
+    
+}
+        else if(radio13[i].selected && radio17[i].selected && radio21[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn2[1] + "р";
+            document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + pp2[0] + pp2[1] + pn2[0] + pn2[1] + "р";
+            return;
+
+        }
+
+
+            else if(radio13[i].selected && radio17[i].selected && radio22[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] + "р";
+                document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + pp2[0] + pp2[2] + pn2[0] + pn2[2] + "р";
+                return;
+
+        }
+            
+
+
+
+
+		else if(radio13[i].selected && radio18[i].selected && radio20[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[1] + ks2[0] + pp2[1] + pp2[0] + pn2[1] + pn2[0] + "р";
+            return;
+    
+}
+        else if(radio13[i].selected && radio18[i].selected && radio21[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] + "р";
+            document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + pp2[1] + pp2[1] + pn2[1] + pn2[1] + "р";
+            return;
+
+        }
+
+
+            else if(radio13[i].selected && radio18[i].selected && radio22[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] + "р";
+                document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + pp2[1] + pp2[2] + pn2[1] + pn2[2] + "р";
+                return;
+
+        }
+            
+   else if(radio13[i].selected && radio19[i].selected && radio20[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] + "р";
+       document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + pp2[2] + pp2[0] + pn2[2] + pn2[0] + "р";
+            return;
+    
+}
+        else if(radio13[i].selected && radio19[i].selected && radio21[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] + "р";
+            document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + pp2[2] + pp2[1] + pn2[2] + pn2[1] + "р";
+            return;
+
+        }
+
+
+            else if(radio13[i].selected && radio19[i].selected && radio22[i].selected) {
+
+          document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] + "р";
+                document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + pp2[2] + pp2[2] + pn2[2] + pn2[2] + "р";
+                return;
+
+        }
+		
+		
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+        else if(radio16[i].selected && radio17[i].selected && radio20[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + ks2[0] + pp2[0] + pp2[0] + pp2[0] + pn2[0] + pn2[0] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio17[i].selected && radio20[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              
+              document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + ks2[1] + pp2[0] + pp2[0] + pp2[1] + pn2[0] + pn2[0] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+          
+          
+    
+          
+          
+		  
+           else if(radio16[i].selected && radio17[i].selected && radio20[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               
+               document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + ks2[2] + pp2[0] + pp2[0] + pp2[2] + pn2[0] + pn2[0] + pn2[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+   else if(radio16[i].selected && radio17[i].selected && radio21[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+       document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + ks2[0] + pp2[0] + pp2[1] + pp2[0] + pn2[0] + pn2[1] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio17[i].selected && radio21[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + ks2[2] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + ks2[2] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + ks2[1] + pp2[0] + pp2[1] + pp2[1] + pn2[0] + pn2[1] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio17[i].selected && radio21[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + ks2[2] + pp2[0] + pp2[1] + pp2[2] + pn2[0] + pn2[1] + pn2[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+   else if(radio16[i].selected && radio17[i].selected && radio22[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+       document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + ks2[0] + pp2[0] + pp2[2] + pp2[0] + pn2[0] + pn2[2] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio17[i].selected && radio22[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + ks2[1] + pp2[0] + pp2[2] + pp2[1] + pn2[0] + pn2[2] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio17[i].selected && radio22[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + ks2[2] + pp2[0] + pp2[2] + pp2[2] + pn2[0] + pn2[2] + pn2[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+
+
+		else if(radio16[i].selected && radio18[i].selected && radio22[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + ks2[0] + pp2[1] + pp2[2] + pp2[0] + pn2[1] + pn2[2] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio18[i].selected && radio22[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + ks2[1] + pp2[1] + pp2[2] + pp2[1] + pn2[1] + pn2[2] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio18[i].selected && radio22[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + ks2[2] + pp2[1] + pp2[2] + pp2[2] + pn2[1] + pn2[2] + pn2[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+
+
+	else if(radio16[i].selected && radio18[i].selected && radio21[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+        document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks2[0] + pp2[1] + pp2[1] + pp2[0] + pn2[1] + pn2[1] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio18[i].selected && radio21[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks2[1] + pp2[1] + pp2[1] + pp2[1] + pn2[1] + pn2[1] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio18[i].selected && radio21[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + k2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks2[2] + pp2[1] + pp2[1] + pp2[2] + pn2[1] + pn2[1] + pn2[2] + "р";
+            return;
+
+		  } 
+		
+		
+		
+		
+		
+		
+			
+		else if(radio16[i].selected && radio18[i].selected && radio20[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[1] + ks2[0] + ks2[0] + pp2[1] + pp2[0] + pp2[0] + pn2[1] + pn2[0] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio18[i].selected && radio20[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[1] + ks2[0] + ks2[1] + pp2[1] + pp2[0] + pp2[1] + pn2[1] + pn2[0] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio18[i].selected && radio20[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[1] + ks2[0] + ks2[2] + pp2[1] + pp2[0] + pp2[2] + pn2[1] + pn2[0] + pn2[2] + "р";
+            return;
+
+		  } 
+		
+
+
+
+
+
+		
+		else if(radio16[i].selected && radio19[i].selected && radio22[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + ks2[0] + pp2[2] + pp2[2] + pp2[0] + pn2[2] + pn2[2] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio19[i].selected && radio22[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + ks2[1] + pp2[2] + pp2[2] + pp2[1] + pn2[2] + pn2[2] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio19[i].selected && radio22[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + ks2[2] + pp2[2] + pp2[2] + pp2[2] + pn2[2] + pn2[2] + pn2[2] + "р";
+            return;
+
+		  } 
+		
+		
+		
+		
+		
+		
+		
+		else if(radio16[i].selected && radio19[i].selected && radio21[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + ks2[0] + pp2[2] + pp2[1] + pp2[0] + pn2[2] + pn2[1] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio19[i].selected && radio21[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + ks2[1] + pp2[2] + pp2[1] + pp2[1] + pn2[2] + pn2[1] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio19[i].selected && radio21[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + ks2[2] + pp2[2] + pp2[1] + pp2[2] + pn2[2] + pn2[1] + pn2[2] + "р";
+            return;
+
+		  } 
+		
+		
+		
+		
+		
+		
+			
+		else if(radio16[i].selected && radio19[i].selected && radio20[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 10-9, " + ks2[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 10-1, " + pp2[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 10-1, " + pn2[0] + "р";
+            document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + ks2[0] + pp2[2] + pp2[0] + pp2[0] + pn2[2] + pn2[0] + pn2[0] + "р";
+            return;
+    
+}
+          else if(radio16[i].selected && radio19[i].selected && radio20[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 15-1, " + pp2[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 15-1, " + pn2[1] + "р";
+              document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + ks2[1] + pp2[2] + pp2[0] + pp2[1] + pn2[2] + pn2[0] + pn2[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio16[i].selected && radio19[i].selected && radio20[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 20-9, " + ks2[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 20-1, " + pp2[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 20-1, " + pn2[2] + "р";
+               document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + ks2[2] + pp2[2] + pp2[0] + pp2[2] + pn2[2] + pn2[0] + pn2[2] + "р";
+            return;
+
+		  } 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        else if(radio15[i].selected && radio17[i].selected && radio20[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+            document.getElementById('out1').innerHTML = ks1[0] + ks1[0] + ks1[0] + pp1[0] + pp1[0] + pp1[0] + pn1[0] + pn1[0] + pn1[0] + "р";
+            return;
+    
+}
+          else if(radio15[i].selected && radio17[i].selected && radio20[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+              document.getElementById('out1').innerHTML = ks1[0] + ks1[0] + ks1[1] + pp1[0] + pp1[0] + pp1[1] + pn1[0] + pn1[0] + pn1[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio15[i].selected && radio17[i].selected && radio20[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+               document.getElementById('out1').innerHTML = ks1[0] + ks1[0] + ks1[2] + pp1[0] + pp1[0] + pp1[2] + pn1[0] + pn1[0] + pn1[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+
+
+
+   else if(radio15[i].selected && radio17[i].selected && radio21[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+       document.getElementById('out1').innerHTML = ks1[0] + ks1[1] + ks1[0] + pp1[0] + pp1[1] + pp1[0] + pn1[0] + pn1[1] + pn1[0] + "р";
+            return;
+    
+}
+          else if(radio15[i].selected && radio17[i].selected && radio21[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+              document.getElementById('out1').innerHTML = ks1[0] + ks1[1] + ks1[1] + pp1[0] + pp1[1] + pp1[1] + pn1[0] + pn1[1] + pn1[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio15[i].selected && radio17[i].selected && radio21[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+               document.getElementById('out1').innerHTML = ks1[0] + ks1[1] + ks1[2] + pp1[0] + pp1[1] + pp1[2] + pn1[0] + pn1[1] + pn1[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+   else if(radio15[i].selected && radio17[i].selected && radio22[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+       document.getElementById('out1').innerHTML = ks1[0] + ks1[2] + ks1[0] + pp1[0] + pp1[2] + pp1[0] + pn1[0] + pn1[2] + pn1[0] + "р";
+            return;
+    
+}
+          else if(radio15[i].selected && radio17[i].selected && radio22[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+              document.getElementById('out1').innerHTML = ks1[0] + ks1[2] + ks1[1] + pp1[0] + pp1[2] + pp1[1] + pn1[0] + pn1[2] + pn1[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio15[i].selected && radio17[i].selected && radio22[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks1[0] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp1[0] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+               document.getElementById('out1').innerHTML = ks1[0] + ks1[2] + ks1[2] + pp1[0] + pp1[2] + pp1[2] + pn1[0] + pn1[2] + pn1[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+
+
+		else if(radio15[i].selected && radio18[i].selected && radio22[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+            document.getElementById('out1').innerHTML = ks1[1] + ks1[2] + ks1[0] + pp1[1] + pp1[2] + pp1[0] + pn1[1] + pn1[2] + pn1[0] + "р";
+            return;
+    
+}
+          else if(radio15[i].selected && radio18[i].selected && radio22[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+              document.getElementById('out1').innerHTML = ks1[1] + ks1[2] + ks1[1] + pp1[1] + pp1[2] + pp1[1] + pn1[1] + pn1[2] + pn1[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio15[i].selected && radio18[i].selected && radio22[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+               document.getElementById('out1').innerHTML = ks1[1] + ks1[2] + ks1[2] + pp1[1] + pp1[2] + pp1[2] + pn1[1] + pn1[2] + pn1[2] + "р";
+            return;
+
+		  } 
+
+
+
+
+
+
+
+	else if(radio15[i].selected && radio18[i].selected && radio21[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+        document.getElementById('out1').innerHTML = ks1[1] + ks1[1] + ks1[0] + pp1[1] + pp1[1] + pp1[0] + pn1[1] + pn1[1] + pn1[0] + "р";
+            return;
+    
+}
+          else if(radio15[i].selected && radio18[i].selected && radio21[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+              document.getElementById('out1').innerHTML = ks1[1] + ks1[1] + ks1[1] + pp1[1] + pp1[1] + pp1[1] + pn1[1] + pn1[1] + pn1[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio15[i].selected && radio18[i].selected && radio21[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+               document.getElementById('out1').innerHTML = ks1[1] + ks1[1] + ks1[2] + pp1[1] + pp1[1] + pp1[2] + pn1[1] + pn1[1] + pn1[2] + "р";
+            return;
+
+		  } 
+		
+		
+		
+		
+		
+		
+			
+		else if(radio15[i].selected && radio18[i].selected && radio20[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+            document.getElementById('out1').innerHTML = ks1[1] + ks1[0] + ks1[0] + pp1[1] + pp1[0] + pp1[0] + pn1[1] + pn1[0] + pn1[0] + "р";
+            return;
+    
+}
+          else if(radio15[i].selected && radio18[i].selected && radio20[i].selected && radio24[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+              document.getElementById('out1').innerHTML = ks1[1] + ks1[0] + ks1[1] + pp1[1] + pp1[0] + pp1[1] + pn1[1] + pn1[0] + pn1[1] + "р";
+            return;
+
+		  }
+		  
+		  
+           else if(radio15[i].selected && radio18[i].selected && radio20[i].selected && radio25[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks1[1] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp1[1] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn1[1] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+               document.getElementById('out1').innerHTML = ks1[1] + ks1[0] + ks1[2] + pp1[1] + pp1[0] + pp1[2] + pn1[1] + pn1[0] + pn1[2] + "р";
+            return;
+
+		  } 
+		
+
+
+        
+        
+        
+        
+        
+        
+        
+           else if(radio15[i].selected && radio19[i].selected && radio22[i].selected && radio23[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+               document.getElementById('out1').innerHTML = ks1[2] + ks1[2] + ks1[0] + pp1[2] + pp1[2] + pp1[0] + pn1[2] + pn1[2] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio15[i].selected && radio19[i].selected && radio22[i].selected && radio24[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks1[2] + ks1[2] + ks1[1] + pp1[2] + pp1[2] + pp1[1] + pn1[2] + pn1[2] + pn1[1] + "р";
+               return;
+
+             }
+             
+             
+              else if(radio15[i].selected && radio19[i].selected && radio22[i].selected && radio25[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 20-9, " + ks1[2] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 20-1, " + pp1[2] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 20-1, " + pn1[2] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks1[2] + ks1[2] + ks1[2] + pp1[2] + pp1[2] + pp1[2] + pn1[2] + pn1[2] + pn1[2] + "р";
+               return;
+
+             }
+
+
+
+
+
+
+
+       else if(radio15[i].selected && radio19[i].selected && radio21[i].selected && radio23[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+           document.getElementById('out1').innerHTML = ks1[2] + ks1[1] + ks1[0] + pp1[2] + pp1[1] + pp1[0] + pn1[2] + pn1[1] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio15[i].selected && radio19[i].selected && radio21[i].selected && radio24[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks1[2] + ks1[1] + ks1[1] + pp1[2] + pp1[1] + pp1[1] + pn1[2] + pn1[1] + pn1[1] + "р";
+               return;
+
+             }
+             
+             
+              else if(radio15[i].selected && radio19[i].selected && radio21[i].selected && radio25[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 15-9, " + ks1[1] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 15-1, " + pp1[1] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 15-1, " + pn1[1] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks1[2] + ks1[1] + ks1[2] + pp1[2] + pp1[1] + pp1[2] + pn1[2] + pn1[1] + pn1[2] + "р";
+               return;
+
+             }
+           
+           
+           
+           
+           
+           
+               
+           else if(radio15[i].selected && radio19[i].selected && radio20[i].selected && radio23[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+               document.getElementById('out1').innerHTML = ks1[2] + ks1[0] + ks1[0] + pp1[2] + pp1[0] + pp1[0] + pn1[2] + pn1[0] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio15[i].selected && radio19[i].selected && radio20[i].selected && radio24[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks1[2] + ks1[0] + ks1[1] + pp1[2] + pp1[0] + pp1[1] + pn1[2] + pn1[0] + pn1[1] + "р";
+               return;
+
+             }
+             
+             
+              else if(radio15[i].selected && radio19[i].selected && radio20[i].selected && radio25[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks1[2] +"р; второй колодец: 10-9, " + ks1[0] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-9, " + pp1[2] +"р; второй колодец: 10-1, " + pp1[0] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn1[2] +"р; второй колодец: 10-1, " + pn1[0] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks1[2] + ks1[0] + ks1[2] + pp1[2] + pp1[0] + pp1[2] + pn1[2] + pn1[0] + pn1[2] + "р";
+               return;
+
+             }
+           
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           else if(radio14[i].selected && radio17[i].selected && radio20[i].selected && radio23[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+               document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + ks1[0] + pp2[0] + pp2[0] + pp1[0] + pn2[0] + pn2[0] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio14[i].selected && radio17[i].selected && radio20[i].selected && radio24[i].selected) {
+                 document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                  document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                  document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + ks1[1] + pp2[0] + pp2[0] + pp1[1] + pn2[0] + pn2[0] + pn1[1] + "р";
+                  return;
+
+             }
+             
+             
+              else if(radio14[i].selected && radio17[i].selected && radio20[i].selected && radio25[i].selected) {
+                  document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 20-9, " + pp1[2] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks2[0] + ks2[0] + ks1[2] + pp2[0] + pp2[0] + pp1[2] + pn2[0] + pn2[0] + pn1[2] + "р";
+               return;
+
+             }
+
+
+
+
+
+
+
+
+      else if(radio14[i].selected && radio17[i].selected && radio21[i].selected && radio23[i].selected) {
+          document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+           document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+           document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn1[0] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+          document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + ks1[0] + pp2[0] + pp2[1] + pp1[0] + pn2[0] + pn2[1] + pn1[0] + "р";
+           return;
+       
+   }
+             else if(radio14[i].selected && radio17[i].selected && radio21[i].selected && radio24[i].selected) {
+                 document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                  document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                  document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + ks1[1] + pp2[0] + pp2[1] + pp1[1] + pn2[0] + pn2[1] + pn1[1] + "р";
+                  return;
+
+             }
+             
+             
+              else if(radio14[i].selected && radio17[i].selected && radio21[i].selected && radio25[i].selected) {
+                  document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks1[1] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-9, " + pp1[1] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn1[1] + "р";
+                  document.getElementById('out1').innerHTML = ks2[0] + ks2[1] + ks1[1] + pp2[0] + pp2[1] + pp1[1] + pn2[0] + pn2[1] + pn1[1] + "р";
+                  
+                  
+                  
+                  return;
+
+             }
+
+
+
+
+
+      else if(radio14[i].selected && radio17[i].selected && radio22[i].selected && radio23[i].selected) {
+          document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+           document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+           document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+          document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + ks1[0] + pp2[0] + pp2[2] + pp1[0] + pn2[0] + pn2[2] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio14[i].selected && radio17[i].selected && radio22[i].selected && radio24[i].selected) {
+              
+                 document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                  document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                  document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + ks1[1] + pp2[0] + pp2[2] + pp1[1] + pn2[0] + pn2[2] + pn1[1] + "р";
+                 
+                 return;
+
+             }
+             
+             
+              else if(radio14[i].selected && radio17[i].selected && radio22[i].selected && radio25[i].selected) {
+             
+                  
+                  document.getElementById('test3').innerHTML=" первый колодец: 10-9, " + ks2[0] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 10-1, " + pp2[0] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 20-9, " + pp1[2] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 10-1, " + pn2[0] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks2[0] + ks2[2] + ks1[2] + pp2[0] + pp2[2] + pp1[2] + pn2[0] + pn2[2] + pn1[2] + "р";
+                  
+                  
+                  return;
+
+             }
+
+
+
+
+
+
+
+           else if(radio14[i].selected && radio18[i].selected && radio22[i].selected && radio23[i].selected) {
+               document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+               document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + ks1[0] + pp2[1] + pp2[2] + pp1[0] + pn2[1] + pn2[2] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio14[i].selected && radio18[i].selected && radio22[i].selected && radio24[i].selected) {
+             
+                 
+                 document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 15-9, " + ks2[1] + "р";
+                  document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                  document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + ks1[1] + pp2[1] + pp2[2] + pp1[1] + pn2[1] + pn2[2] + pn1[1] + "р";
+                 
+                 
+                 return;
+
+             }
+             
+             
+              else if(radio14[i].selected && radio18[i].selected && radio22[i].selected && radio25[i].selected) {
+              
+                  
+                  
+                  document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 20-9, " + pp1[2] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks2[1] + ks2[2] + ks1[2] + pp2[1] + pp2[2] + pp1[2] + pn2[1] + pn2[2] + pn1[2] + "р";
+                  
+                  
+                  
+                  
+                  return;
+
+             }
+
+
+
+
+
+
+
+       else if(radio14[i].selected && radio18[i].selected && radio21[i].selected && radio23[i].selected) {
+           document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+            document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+            document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+           document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks1[0] + pp2[1] + pp2[1] + pp1[0] + pn2[1] + pn2[1] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio14[i].selected && radio18[i].selected && radio21[i].selected && radio24[i].selected) {
+                 document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                  document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                  document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks1[1] + pp2[1] + pp2[1] + pp1[1] + pn2[1] + pn2[1] + pn1[1] + "р";
+                 return;
+
+             }
+             
+             
+              else if(radio14[i].selected && radio18[i].selected && radio21[i].selected && radio25[i].selected) {
+                  document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks1[2] + pp2[1] + pp2[1] + pp1[2] + pn2[1] + pn2[1] + pn1[2] + "р";
+                  return;
+
+             }
+           
+           
+           
+           
+           
+           
+               
+           else if(radio14[i].selected && radio18[i].selected && radio20[i].selected && radio23[i].selected) {
+               document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+                document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+                document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+               document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks1[0] + pp2[1] + pp2[1] + pp1[0] + pn2[1] + pn2[1] + pn1[0] + "р";
+               return;
+       
+   }
+             else if(radio14[i].selected && radio18[i].selected && radio20[i].selected && radio24[i].selected) {
+              
+                 
+                 document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                  document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                  document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                 document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks1[1] + pp2[1] + pp2[1] + pp1[1] + pn2[1] + pn2[1] + pn1[1] + "р";
+                 
+                 return;
+
+             }
+             
+             
+              else if(radio14[i].selected && radio18[i].selected && radio20[i].selected && radio25[i].selected) {
+           
+                  document.getElementById('test3').innerHTML=" первый колодец: 15-9, " + ks2[1] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 15-1, " + pp2[1] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 15-1, " + pn2[1] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                  document.getElementById('out1').innerHTML = ks2[1] + ks2[1] + ks1[2] + pp2[1] + pp2[1] + pp1[2] + pn2[1] + pn2[1] + pn1[2] + "р";
+                  
+                  
+                  return;
+
+             }
+           
+
+
+
+
+
+              else if(radio14[i].selected && radio19[i].selected && radio22[i].selected && radio23[i].selected) {
+                  document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+                  document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + ks1[0] + pp2[2] + pp2[2] + pp1[0] + pn2[2] + pn2[2] + pn1[0] + "р";
+                  return;
+          
+      }
+                else if(radio14[i].selected && radio19[i].selected && radio22[i].selected && radio24[i].selected) {
+                
+                    
+                    document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                     document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                     document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[1] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                    document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + ks1[1] + pp2[2] + pp2[2] + pp1[1] + pn2[2] + pn2[2] + pn1[1] + "р";
+                    
+                    
+                    return;
+
+                }
+                
+                
+                 else if(radio14[i].selected && radio19[i].selected && radio22[i].selected && radio25[i].selected) {
+                 
+                     
+                     
+                     document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 20-9, " + ks2[2] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                      document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 20-1, " + pp2[2] +"р; третий колодец: 20-9, " + pp1[2] + "р";
+                      document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 20-1, " + pn2[2] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                     document.getElementById('out1').innerHTML = ks2[2] + ks2[2] + ks1[2] + pp2[2] + pp2[2] + pp1[2] + pn2[2] + pn2[2] + pn1[2] + "р";
+                     
+                     
+                     
+                     
+                     return;
+
+                }
+
+
+
+
+
+
+
+          else if(radio14[i].selected && radio19[i].selected && radio21[i].selected && radio23[i].selected) {
+              document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+               document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + ks2[1] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+               document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + ks2[1] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+              document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + ks1[0] + pp2[2] + pp2[1] + pp1[0] + pn2[2] + pn2[1] + pn1[0] + "р";
+                  return;
+          
+      }
+                else if(radio14[i].selected && radio19[i].selected && radio21[i].selected && radio24[i].selected) {
+                    document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                     document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                     document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                    document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + ks1[1] + pp2[2] + pp2[1] + pp1[1] + pn2[2] + pn2[1] + pn1[1] + "р";
+                    return;
+
+                }
+                
+                
+                 else if(radio14[i].selected && radio19[i].selected && radio21[i].selected && radio25[i].selected) {
+                     document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 15-9, " + ks2[1] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                      document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 15-1, " + pp2[1] +"р; третий колодец: 20-9, " + pp1[2] + "р";
+                      document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 15-1, " + pn2[1] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                     document.getElementById('out1').innerHTML = ks2[2] + ks2[1] + ks1[2] + pp2[2] + pp2[1] + pp1[2] + pn2[2] + pn2[1] + pn1[2] + "р";
+                     return;
+
+                }
+              
+              
+              
+              
+              
+              
+                  
+              else if(radio14[i].selected && radio19[i].selected && radio20[i].selected && radio23[i].selected) {
+                  document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 10-9, " + ks1[0] + "р";
+                   document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 10-1, " + pp1[0] + "р";
+                   document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 10-1, " + pn1[0] + "р";
+                  document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + ks1[0] + pp2[2] + pp2[0] + pp1[0] + pn2[2] + pn2[0] + pn1[0] + "р";
+                  return;
+          
+      }
+                else if(radio14[i].selected && radio19[i].selected && radio20[i].selected && radio24[i].selected) {
+                 
+                    
+                    document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 15-9, " + ks1[1] + "р";
+                     document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 15-1, " + pp1[1] + "р";
+                     document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 15-1, " + pn1[1] + "р";
+                    document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + ks1[1] + pp2[2] + pp2[0] + pp1[1] + pn2[2] + pn2[0] + pn1[1] + "р";
+                    
+                    return;
+
+                }
+                
+                
+                 else if(radio14[i].selected && radio19[i].selected && radio20[i].selected && radio25[i].selected) {
+              
+                     document.getElementById('test3').innerHTML=" первый колодец: 20-9, " + ks2[2] +"р; второй колодец: 10-9, " + ks2[0] +"р; третий колодец: 20-9, " + ks1[2] + "р";
+                      document.getElementById('test4').innerHTML=" первый колодец: 20-1, " + pp2[2] +"р; второй колодец: 10-1, " + pp2[0] +"р; третий колодец: 20-1, " + pp1[2] + "р";
+                      document.getElementById('test5').innerHTML=" первый колодец: 20-1, " + pn2[2] +"р; второй колодец: 10-1, " + pn2[0] +"р; третий колодец: 20-1, " + pn1[2] + "р";
+                     document.getElementById('out1').innerHTML = ks2[2] + ks2[0] + ks1[2] + pp2[2] + pp2[0] + pp1[2] + pn2[2] + pn2[0] + pn1[2] + "р";
+                     
+                     
+                     return;
+
+                }
+              
+
+
+        
+        
+        
+        
+    
+
+
+
+	
+        
+    }
+        
+       
+    
+    
+
+   
+}
+			</script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+<style>
+			    body {
+			        
+			        background-color: hsl(200deg 30% 92%);
+			    }
+			    
+              
+		   
+           .tn-atom {
+               color: #2d5d89;
+               font-size: 50px;
+               font-family: 'Montserrat',Arial,sans-serif;
+               line-height: 1.55;
+               font-weight: 500;
+               background-position: center center;
+               border-color: transparent;
+               border-style: solid;
+               
+           }
+
+
+.tn-atom1 {
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.left {position:fixed;left:0;top:10%;width:50%;height:100%;}
+.right {position:fixed;right:0;top:10%;width:50%;height:100%;}
+
+
+
+.tn-atom2 {
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.3;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+			</style>
 				</head>
 				
-				<body>
-				<div id="left">
+				<body align="center">
+				    <div class="tn-atom">Калькулятор септика из бетонных колец</div>
+                    <br>
+                    <br>
+				<div class="left">
 				<div class="o">
-				<a href="##"><span id="one12"><b>Выгреб из ЖБ колец</b></span></a><br>
+                    <div class="tn-atom1">Выгреб из ЖБ колец</div><br>
 				</div>
 			<br>
 			<br>
 				
-				<div class="a">
+                <span>1</span>
+                <img src="https://files.fm/thumb_show.php?i=ua8g7zqx8" width="130px" height="100px" >
 				<span>2</span>
-				
-				<img src="1.jpg" id="pic1" width="130px" height="100px" > </div>
-              <div class="b">  
+				<img src="https://files.fm/thumb_show.php?i=sc9cp46xm" width="130px" height="100px" >
+                <span>3</span>
+                <img src="https://files.fm/thumb_show.php?i=qn2zjahfc
+                    " width="130px" height="100px" >
 			  <span>4</span>
-				<img src="2.jpg" id="pic2" width="130px" height="100px" ></div>
-             <div  class="c">      <span>1</span>
-				<img src="3.jpg" id="pic3" width="130px" height="100px" ></div>
-              <div  class="d">      <span>5</span>
-				<img src="4.jpg" id="pic4" width="130px" height="100px" ></div>
-              <div  class="e">      <span>3</span>
-				<img src="5.jpg" id="pic5" width="130px" height="100px" ></div>
+			<img src="https://files.fm/thumb_show.php?i=79u2buufb
+                " width="130px" height="100px">
+			       
+                   <span>5</span>
+            <img src="https://files.fm/thumb_show.php?i=ze25fq6m4" width="130px" height="100px" >
+			
+             
+		
 				
                 
                 
             
                 
-                <div class="f">
+                <div class="tn-atom2">
                 <p>Выберите номер позиции:</p>
                 
                 <select>
@@ -50,7 +1814,7 @@
                 </select>
 				</div>
 				
-				<div class="r">
+				<div class="tn-atom2 ">
 				
 				
 				<p>Выберите диаметр колец для первого колодца:</p>
@@ -66,7 +1830,7 @@
 <br>
 <br>
 
-<div class="s">
+<div class="tn-atom2 ">
 <p>Выберите диаметр колец для второго колодца:</p>
 <select>
     <option value="no">--</option>
@@ -85,9 +1849,9 @@
 
         <br>
 
-        <div class="t">
+        <div class="tn-atom2 ">
 
-<button id="but">Сформировать</button>
+<button id="but" onclick="f2()">Сформировать</button>
 <br>
                <br>
 <span><strong>КС </strong><span id='test'></span></span><br>
@@ -98,38 +1862,38 @@
                     
              
                     
-            </div>        
+            </div>
                     
                     
-                    </div>
-                    </div>
-                    <div id="right">
+                   
+                   
+                    <div class="right">
 					
 									<div class="n">
-				<a href="##"><span id="one12"><b>Канализация из ЖБ колец</b></span></a><br>
+                                    <div class="tn-atom1">Канализация из ЖБ колец</div><br>
 				</div>
 			<br>
 			<br>
 				
-				<div class="h">
+                <span>1</span>
+               <img src="https://files.fm/thumb_show.php?i=pu4devk85" width="130px" height="100px" >
 				<span>2</span>
 				
-				<img src="8.jpg" id="pic1" width="130px" height="100px" > </div>
-              <div class="j">  
+				<img src="https://files.fm/thumb_show.php?i=3tcpa58ek" width="130px" height="100px" >
+                <span>3</span>
+       <img src="https://files.fm/thumb_show.php?i=hgk56c7eb" width="130px" height="100px" >
 			  <span>4</span>
-				<img src="6.jpg" id="pic2" width="130px" height="100px" ></div>
-             <div  class="k">      <span>1</span>
-				<img src="10.jpg" id="pic3" width="130px" height="100px" ></div>
-              <div  class="l">      <span>5</span>
-				<img src="9.jpg" id="pic4" width="130px" height="100px" ></div>
-              <div  class="m">      <span>3</span>
-				<img src="7.jpg" id="pic5" width="130px" height="100px" ></div>
+			<img src="https://files.fm/thumb_show.php?i=pbjg7v8qb" width="130px" height="100px" >
+                 
+                  <span>5</span>
+			<img src="https://files.fm/thumb_show.php?i=zkmwq5nsd" width="130px" height="100px" >
+                
 				
                 
                 
             
                 
-                <div class="p">
+                <div class="tn-atom2 ">
                 <p>Выберите номер позиции:</p>
                 
                 <select>
@@ -143,7 +1907,7 @@
                 </select>
 				</div>
 				
-				 <div class="u">
+				 <div class="tn-atom2 ">
 				
 				
 				
@@ -160,7 +1924,7 @@
 <br>
 <br>
 
- <div class="v">
+ <div class="tn-atom2 ">
 
 <p>Выберите диаметр колец для второго колодца:</p>
 <select>
@@ -176,7 +1940,7 @@
 </div>
 
 
- <div class="w">
+ <div class="tn-atom2 ">
 
 
 <p>Выберите диаметр колец для третьего колодца:</p>
@@ -197,12 +1961,12 @@
 
 
 
- <div class="x">
+ <div class="tn-atom2 ">
 
 
         
 
-<button id="but1">Сформировать</button>
+<button id="but1" onclick="f1()">Сформировать</button>
 <br>
                <br>
 <span><strong>КС </strong><span id='test3'></span></span><br>
